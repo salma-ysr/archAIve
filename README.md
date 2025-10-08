@@ -7,7 +7,7 @@ Helping researchers and students discover relevant papers instantly based on the
 
 ## Overview
 **ArchAIve** is a machine learning–based web application that recommends academic articles from the [ArXiv](https://www.kaggle.com/datasets/Cornell-University/arxiv) repository.  
-Given a topic, question, or set of keywords (e.g., *"neural networks"*, *"single-cell data"*), the system suggests the **top 10 most relevant research papers** with direct links to their DOIs.
+Given a topic, question, or set of keywords, the system suggests most relevant research papers with links to their DOIs.
 
 ---
 
