@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+
+# Data (raw + derived)
+data/archive.zip
+data/arxiv-metadata-oai-snapshot.json
+data/processed/*.parquet
+data/processed/*.joblib
+
