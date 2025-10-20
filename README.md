@@ -18,3 +18,45 @@ Given a topic, question, or set of keywords, the system suggests most relevant r
 
 **Format:** JSON  
 **Key fields used:** `title`, `abstract`, `categories`
+
+
+## Repo Structure
+ArchAIve
+|
+|-- code/
+|   |-- preprocess.py -> load subset, clean text & save parquet
+|   |-- build_index,py -> fit TF-IDF & KNN, save artifacts & meta
+|   |-- recommend.py -> command-line recommender
+|
+|-- data/
+|   |-- arxiv-metadata-oai-snapshot.json -> raw JSON file goes here
+|   |-- processed/
+|       |-- arxiv_small_clean.parquet -> outputted once you run preprocess.py
+|       |-- tfidf_vectorizer.joblib --> outputted once you build the index
+|       |-- tfidf_vectorizer.joblib --> ''
+|       |-- meta.parquet --> ''
+|
+|-- Project Proposal.pdf (deliverable 1)
+|-- Preliminary Results.pdf (deliverable 2)
+|-- **README.md** -> here!
+
+## Setup & How to run recommend.py
+
+### 1. Activate your venv
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -U pandas numpy scikit-learn joblib pyarrow nltk matplotlib
+
+### 2. Download ArxIV dataset and unzip it in ./data/
+
+### 3. Preprocess
+    run:
+    i) python3 code/preprocess.py -> this loads small subset of data and cleans the text
+    ii) python3 code/build_index.py
+
+### 4. Test the recommender
+    run:
+    python3 code/recommend.py "some query"
+
+## Cosine Similarity
+The Cosine Similarity column is the cosine between TF-IDF vectors (range 0–1). The top 5 articles with highest cosine similarity will be shown.
