@@ -21,6 +21,7 @@ Given a topic, question, or set of keywords, the system suggests most relevant r
 
 
 ## Repo Structure
+```
 ArchAIve
 |
 |-- code/
@@ -29,7 +30,7 @@ ArchAIve
 |   |-- recommend.py -> command-line recommender
 |
 |-- data/
-|   |-- arxiv-metadata-oai-snapshot.json -> raw JSON file goes here
+|   |-- arxiv-metadata-oai-snapshot.json -> raw JSON file goes here (pls don't commit this)
 |   |-- processed/
 |       |-- arxiv_small_clean.parquet -> outputted once you run preprocess.py
 |       |-- tfidf_vectorizer.joblib --> outputted once you build the index
@@ -39,6 +40,7 @@ ArchAIve
 |-- Project Proposal.pdf (deliverable 1)
 |-- Preliminary Results.pdf (deliverable 2)
 |-- **README.md** -> here!
+```
 
 ## Setup & How to run recommend.py
 
