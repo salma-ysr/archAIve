@@ -45,10 +45,11 @@ ArchAIve
 ## Setup & How to run recommend.py
 
 ### 1. Activate your venv
+```
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -U pandas numpy scikit-learn joblib pyarrow nltk matplotlib
-
+```
 ### 2. Download ArxIV dataset and unzip it in ./data/
 
 ### 3. Preprocess
