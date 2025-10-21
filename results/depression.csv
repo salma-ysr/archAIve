@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine
+Depression,1,0704.3335,Lift of noninvariant solutions of heavenly equations from three to four dimensions and new ultra-hyperbolic metrics,math-ph math.MP,0.0
+Depression,2,0704.3337,The Blazhko behaviour of RR Geminorum II -- long-term photometric results,astro-ph,0.0
+Depression,3,0704.3334,Solutions for the constant quantum Yang-Baxter equation from Lie (super)algebras,math.QA hep-th math-ph math.MP,0.0
+Depression,4,0704.3332,Groups of diffeomorphisms and geometric loops of manifolds over ultra-normed fields,math.GR math.FA,0.0
+Depression,5,0704.3336,Revisiting the effect of nearby supernova remnants on local cosmic rays,astro-ph,0.0

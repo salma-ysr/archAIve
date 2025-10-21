@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine,relevant
+free radicals cancer,1,0704.0429,"Quantitative Resolution to some ""Absolute Discrepancies"" in Cancer Theories: a View from Phage lambda Genetic Switch",q-bio.SC q-bio.CB,0.7088,1
+free radicals cancer,2,0704.1912,Bone Cancer Rates in Dinosaurs Compared with Modern Vertebrates,q-bio.PE astro-ph physics.geo-ph,0.4457,1
+free radicals cancer,3,0704.0340,Phonon-mediated decay of an atom in a surface-induced potential,quant-ph,0.1773,0
+free radicals cancer,4,0704.1849,Response of degree-correlated scale-free networks to stimuli,cond-mat.dis-nn,0.1745,0
+free radicals cancer,5,0704.2519,Comparative study of depth-dose distributions for beams of light and heavy nuclei in tissue-like media,physics.med-ph,0.1632,1

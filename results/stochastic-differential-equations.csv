@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine,relevant
+Stochastic differential equations,1,0704.0022,Stochastic Lie group integrators,math.NA,0.4128,1
+Stochastic differential equations,2,0704.0509,Dissipative backward stochastic differential equations with locally Lipschitz nonlinearity,math.PR,0.3919,1
+Stochastic differential equations,3,0705.0458,The accessory parameter problem in positive characteristic,math.AG math.NT,0.3823,0
+Stochastic differential equations,4,0704.2679,"On the Applications of a New Technique to Solve Linear Differential Equations, with and without Source",math-ph math.MP nlin.SI,0.3695,1
+Stochastic differential equations,5,0704.3243,On Differential Sequences,math-ph math.GR math.MP,0.3693,1

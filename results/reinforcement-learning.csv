@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine
+reinforcement learning,1,0704.3453,An Adaptive Strategy for the Classification of G-Protein Coupled Receptors,cs.AI q-bio.QM,0.6017,1
+reinforcement learning,2,0704.3905,Ensemble Learning for Free with Evolutionary Algorithms ?,cs.AI,0.583,1
+reinforcement learning,3,0705.0199,The Parameter-Less Self-Organizing Map algorithm,cs.NE cs.AI cs.CV,0.3876,1
+reinforcement learning,4,0705.0666,Validating module network learning algorithms using simulated data,q-bio.QM q-bio.MN,0.3207,0
+reinforcement learning,5,0705.0602,Risk Assessment Algorithms Based On Recursive Neural Networks,cs.NE,0.274,1

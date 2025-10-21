@@ -1,8 +1,11 @@
 from pathlib import Path
 import sys, re, joblib, pandas as pd
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "processed"
+ARTIFACTS = ROOT / "data" / "processed" # joblibs + meta
+RESULTS_DIR = ROOT / "results" # saved per-query CSVs
+TOPK = 5
 
 def clean_query(q: str) -> str:
     q = q.lower()
@@ -14,10 +17,10 @@ def squash_ws(s: str) -> str:
 
 def authors_to_str(a) -> str:
     """
-    Handle diff authors formats like:
-    >>string: "Doe, Smith, ..."
-    >>list[str]: ["A. Doe", "B. Smith"]
-    >>list[dict]: [{"name": "A. Doe"}, ...]
+    handles diff authors formats like
+        string: "Doe, Smith, ..."
+        list[str]: ["A. Doe", "B. Smith"]
+        list[dict]: [{"name": "A. Doe"}, ...]
     """
     if a is None:
         return "N/A"
@@ -29,50 +32,75 @@ def authors_to_str(a) -> str:
             if isinstance(item, str):
                 names.append(squash_ws(item))
             elif isinstance(item, dict):
-                # arXiv JSON sometimes uses {"name": "..."}
                 name = item.get("name") or item.get("fullname") or ""
                 if name:
                     names.append(squash_ws(name))
         if not names:
             return "N/A"
-        # show first 3 to keep width tidy
         s = ", ".join(names[:3])
         if len(names) > 3:
             s += " et al."
         return s
     return "N/A"
 
+def slug(s: str) -> str:
+    s = s.strip().lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return re.sub(r"-+", "-", s).strip("-") or "query"
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 code/recommend.py \"your query text here\"")
+        print('Usage: python3 code/recommend.py "your query text here"')
         sys.exit(1)
 
     query = " ".join(sys.argv[1:])
-    vectorizer = joblib.load(OUT / "tfidf_vectorizer.joblib")
-    knn = joblib.load(OUT / "knn_index.joblib")
-    meta = pd.read_parquet(OUT / "meta.parquet")
 
+    # load artifacts
+    vectorizer = joblib.load(ARTIFACTS / "tfidf_vectorizer.joblib")
+    knn = joblib.load(ARTIFACTS / "knn_index.joblib")
+    meta = pd.read_parquet(ARTIFACTS / "meta.parquet")
+
+    # vectorize + search
     q_vec = vectorizer.transform([clean_query(query)])
-    distances, indices = knn.kneighbors(q_vec, n_neighbors=5)
+    distances, indices = knn.kneighbors(q_vec, n_neighbors=TOPK)
 
-    recs = meta.iloc[indices[0]].copy()
-    recs["similarity"] = (1 - distances[0]).round(4)
+    # distances = (1 - cosine)
+    cosine = (1.0 - distances[0]).astype(float)
 
-    # sanitize fields
-    recs["title"] = recs["title"].map(squash_ws)
-    recs["categories"] = recs["categories"].map(squash_ws)
-    recs["authors"] = recs["authors"].map(authors_to_str)
+    # build display dataframe
+    recs = meta.iloc[indices[0]].copy().reset_index(drop=True)
+    recs["similarity"] = np.round(cosine, 4)
+    recs["title"] = recs.get("title", "").map(squash_ws)
+    recs["categories"] = recs.get("categories", "").map(squash_ws)
+    recs["authors"] = recs.get("authors", "").map(authors_to_str)
 
-    # Reorder columns
-    recs = recs[["title", "authors", "categories", "similarity"]]
-
-    print(f"\nQuery: \"{query}\"\n")
+    # pretty print
+    print(f'\nQuery: "{query}"\n')
     print("Top-5 Recommended Papers:\n")
     print(f"{'Title':70} | {'Authors':30} | {'Categories':22} | {'Cosine Similarity'}")
     print("-" * 150)
-
     for _, row in recs.iterrows():
         title = (row["title"][:67] + "...") if len(row["title"]) > 70 else row["title"]
         authors = (row["authors"][:27] + "...") if len(row["authors"]) > 30 else row["authors"]
         cats = (row["categories"][:19] + "...") if len(row["categories"]) > 22 else row["categories"]
         print(f"{title:70} | {authors:30} | {cats:22} | {row['similarity']:.3f}")
+
+    # save a per-query CSV for analysis
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # rank, doc id (fallback to dataframe index if no id)
+    doc_id_col = "id" if "id" in recs.columns else ("doc_id" if "doc_id" in recs.columns else None)
+    doc_ids = recs[doc_id_col] if doc_id_col else pd.Series(indices[0], name="doc_id")
+
+    topk_df = pd.DataFrame({
+        "query": [query] * len(recs),
+        "rank": np.arange(1, len(recs) + 1),
+        "doc_id": doc_ids.values,
+        "title": recs["title"].values,
+        "categories": recs["categories"].values,
+        "cosine": recs["similarity"].astype(float).values,
+    })
+
+    out_path = RESULTS_DIR / f"{slug(query)}.csv"
+    topk_df.to_csv(out_path, index=False)
+    print(f"\n[saved] {out_path}")

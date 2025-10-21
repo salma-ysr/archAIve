@@ -1,0 +1,13 @@
+query,avg_cosine,max_cosine,precision_at_k
+Superconductivity,0.31555999999999995,0.363,1.0
+Graph neural networks,0.31384,0.3584,0.6
+free radicals cancer,0.3339,0.7088,0.6
+Symmetry and Numerical Solutions for Systems of Non-linear Reaction,0.24392,0.3122,0.4
+Dark matter,0.44382,0.5068,1.0
+Large language models,0.31674,0.4229,0.6
+cancer and protein misfolding,0.38302,0.629,0.8
+Image segmentation,0.34694,0.4433,0.6
+Transformer models,0.33926,0.3823,0.0
+quantum computing,0.30019999999999997,0.415,0.6
+Stochastic differential equations,0.38516,0.4128,0.8
+Machine learning,0.39626,0.6653,0.8

@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine
+solar system,1,0704.2294,Sensitivity of low degree oscillations to the change in solar abundances,astro-ph,0.4042,1
+solar system,2,0705.0547,The Solar-Interior Equation of State with the Path-Integral Formalism I. Domain of Validity,astro-ph,0.3624,1
+solar system,3,0704.1523,"The orbit, mass, size, albedo, and density of (65489) Ceto/Phorcys: A tidally-evolved binary Centaur",astro-ph,0.3415,1
+solar system,4,0704.1511,"3d Numerical Models of the Chromosphere, Transition Region, and Corona",astro-ph,0.3069,1
+solar system,5,0704.1592,Multi-wavelength Analysis of a Quiet Solar Region,astro-ph,0.267,1

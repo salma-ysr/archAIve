@@ -26,7 +26,7 @@ OUT_DIR = ROOT / "data" / "processed"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_FILE = OUT_DIR / "arxiv_small_clean.parquet"
 
-def load_subset(max_rows: int = 5000) -> pd.DataFrame:
+def load_subset(max_rows: int = 5000) -> pd.DataFrame: #only using 5000 rows for now! Todo: increase to full dataset
     """Load a small subset line-by-line from the giant JSON."""
     rows = []
     with open(RAW_JSON, "r") as f:
