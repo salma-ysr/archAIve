@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,cosine
+neural networks,1,0704.3702,Statistical mechanics of complex networks,cond-mat.stat-mech,0.4236
+neural networks,2,0704.1144,Optimization in Gradient Networks,cond-mat.stat-mech,0.3511
+neural networks,3,0704.1028,A neural network approach to ordinal regression,cs.LG cs.AI cs.NE,0.3285
+neural networks,4,0704.3706,A multivariate approach to heavy flavour tagging with cascade training,physics.data-an,0.328
+neural networks,5,0704.1849,Response of degree-correlated scale-free networks to stimuli,cond-mat.dis-nn,0.3098
