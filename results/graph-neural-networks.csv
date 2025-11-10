@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Graph neural networks,1,0704.3702,Statistical mechanics of complex networks,cond-mat.stat-mech,0.3584,1
-Graph neural networks,2,0704.1431,Generalized characteristic polynomials of graph bundles,math.CO,0.3369,0
-Graph neural networks,3,0705.0100,On Hadwiger Conjecture,math.GM,0.2989,0
-Graph neural networks,4,0704.1144,Optimization in Gradient Networks,cond-mat.stat-mech,0.297,1
-Graph neural networks,5,0704.1028,A neural network approach to ordinal regression,cs.LG cs.AI cs.NE,0.278,1

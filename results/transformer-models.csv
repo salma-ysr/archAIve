@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Transformer models,1,0704.3607,Low density expansion and isospin dependence of nuclear energy functional: comparison between relativistic and Skyrme models,nucl-th,0.3823,0
-Transformer models,2,0704.3936,Hidden past of dark energy cosmological models,gr-qc astro-ph hep-th,0.3566,0
-Transformer models,3,0704.3330,Interacting Energy Components and Observational $H(z)$ Data,astro-ph gr-qc hep-th,0.3356,0
-Transformer models,4,0704.0841,Difermion condensates in vacuum in 2-4D four-fermion interaction models,hep-th,0.3202,0
-Transformer models,5,0704.0278,q-Deformed spin foam models of quantum gravity,gr-qc,0.3016,0

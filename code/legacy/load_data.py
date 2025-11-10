@@ -1,10 +1,11 @@
+# load a
 import json
 import pandas as pd
 from pathlib import Path
 
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "arxiv-metadata-oai-snapshot.json"
 
-def load_subset(max_rows=5000):
+def load_subset(max_rows=1000_000):
     rows = []
     with open(DATA_PATH, "r") as f:
         for i, line in enumerate(f):

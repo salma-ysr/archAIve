@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-cancer and protein misfolding,1,0704.0429,"Quantitative Resolution to some ""Absolute Discrepancies"" in Cancer Theories: a View from Phage lambda Genetic Switch",q-bio.SC q-bio.CB,0.629,1
-cancer and protein misfolding,2,0704.1912,Bone Cancer Rates in Dinosaurs Compared with Modern Vertebrates,q-bio.PE astro-ph physics.geo-ph,0.3955,0
-cancer and protein misfolding,3,0704.2964,Fourier Analysis of Biological Evolution: Concept of Selection Moment,q-bio.BM q-bio.QM,0.3725,1
-cancer and protein misfolding,4,0704.0191,Intricate Knots in Proteins: Function and Evolution,physics.bio-ph physics.data-an q-bio.BM,0.2806,1
-cancer and protein misfolding,5,0705.0201,Neutral genetic drift can aid functional protein evolution,q-bio.PE q-bio.BM,0.2375,1

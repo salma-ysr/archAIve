@@ -56,7 +56,7 @@ ArchAIve
 ```
 python3 -m venv .venv
 source .venv/bin/activate
-pip3 install -U pandas numpy scikit-learn joblib pyarrow nltk matplotlib
+pip3 install -U pandas numpy scikit-learn joblib pyarrow nltk matplotlib flask
 ```
 ### 2. Download ArxIV dataset and unzip it in ./data/
 

@@ -14,7 +14,7 @@ if __name__ == "__main__":
     df = pd.read_parquet(CLEAN)
     texts = df["clean_abstract"].fillna("")
 
-    vectorizer = TfidfVectorizer(max_features=5000) #term frequency-inverse document frequency (how rare term is across documents)
+    vectorizer = TfidfVectorizer(max_features=50_000) #term frequency-inverse document frequency (how rare term is across documents)
     X = vectorizer.fit_transform(texts) #learn idf and convert abstracts into tf-idf vectors
 
     knn = NearestNeighbors(n_neighbors=10, metric="cosine") #find nearest neighbors based on cosine similarity (1 max similarity, 0 min)
