@@ -11,3 +11,10 @@ data/arxiv-metadata-oai-snapshot.json
 data/processed/*.parquet
 data/processed/*.joblib
 
+# build/data artifacts
+data/processed/*.parquet
+data/processed/*.idx
+data/processed/*.joblib
+
+# query outputs
+data/results/*.csv
