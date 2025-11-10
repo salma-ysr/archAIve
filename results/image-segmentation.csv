@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Image segmentation,1,0705.0828,Enhancement of Noisy Planar Nuclear Medicine Images using Mean Field Annealing,cs.CV,0.4433,1
-Image segmentation,2,0705.0287,The Wide Field Spectrograph (WiFeS),astro-ph,0.3621,0
-Image segmentation,3,0704.0978,Distribution of the molecular absorption in front of the quasar B0218+357,astro-ph,0.3309,0
-Image segmentation,4,0704.3447,Real Time Turbulent Video Perfecting by Image Stabilization and Super-Resolution,physics.optics,0.3193,1
-Image segmentation,5,0705.0204,Using Images to create a Hierarchical Grid Spatial Index,cs.DS,0.2791,1

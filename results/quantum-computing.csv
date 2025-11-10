@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-quantum computing,1,0704.3395,General-Purpose Computing on a Semantic Network Substrate,cs.AI cs.PL,0.415,0
-quantum computing,2,0704.1737,Quantum memory for images - a quantum hologram,quant-ph,0.304,1
-quantum computing,3,0704.2247,Chaos and Complexity of quantum motion,quant-ph cond-mat.stat-mech nlin.CD,0.2667,1
-quantum computing,4,0704.2297,Efficient scheme for one-way quantum computing in thermal cavities,quant-ph,0.258,1
-quantum computing,5,0705.0669,A Simplification of Combinatorial Link Floer Homology,math.GT math.SG,0.2573,0

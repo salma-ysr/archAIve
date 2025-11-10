@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Superconductivity,1,0704.0633,d-wave superconductivity from electron-phonon interactions,cond-mat.supr-con cond-mat.str-el,0.363,1
-Superconductivity,2,0704.0365,Extending the theory of phonon-mediated superconductivity in quasi-2D,cond-mat.supr-con cond-mat.str-el,0.328,1
-Superconductivity,3,0704.2310,Semiclassical Theory of Bardeen-Cooper-Schrieffer Pairing-Gap Fluctuations,cond-mat.supr-con,0.3207,1
-Superconductivity,4,0705.0822,The Origin of Fermi Arcs in Cuprate Pseudogap States and Strong Constraints on Viable Theories of High-Temperature Superconductivity,cond-mat.supr-con cond-mat.str-el nucl-th,0.2833,1
-Superconductivity,5,0704.1528,Extremely strong-coupling superconductivity and anomalous lattice properties in the beta-pyrochlore oxide KOs2O6,cond-mat.supr-con,0.2828,1

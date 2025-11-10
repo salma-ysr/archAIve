@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine
-space,1,0705.0625,N^p Spaces,math.OA math.FA,0.3913
-space,2,0704.1541,Riemannian and Lorentzian structures on the non symmetric space SO(2m)/Sp(m),math.DG math.RA,0.3869
-space,3,0704.0430,Reduced phase space and toric variety coordinatizations of Delzant spaces,math.SG math.AG,0.3738
-space,4,0705.0333,A generalization of Vassiliev's h-principle,math.AT math.DG,0.3358
-space,5,0704.3547,Noncommutativity from spectral flow,hep-th,0.2872

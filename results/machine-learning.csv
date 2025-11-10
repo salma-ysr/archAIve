@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Machine learning,1,0704.3453,An Adaptive Strategy for the Classification of G-Protein Coupled Receptors,cs.AI q-bio.QM,0.6653,1
-Machine learning,2,0704.3905,Ensemble Learning for Free with Evolutionary Algorithms ?,cs.AI,0.4832,1
-Machine learning,3,0705.0631,Hybrid Quantum Cloning Machine,quant-ph,0.3266,0
-Machine learning,4,0705.0199,The Parameter-Less Self-Organizing Map algorithm,cs.NE cs.AI cs.CV,0.277,1
-Machine learning,5,0705.0666,Validating module network learning algorithms using simulated data,q-bio.QM q-bio.MN,0.2292,1

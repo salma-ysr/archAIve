@@ -1,6 +1,0 @@
-query,rank,doc_id,title,categories,cosine,relevant
-Dark matter,1,0704.2816,Unification and Dark Matter in a Minimal Scalar Extension of the Standard Model,hep-ph,0.5068,1
-Dark matter,2,0704.0794,Constraints on the Interactions between Dark Matter and Baryons from the X-ray Quantum Calorimetry Experiment,astro-ph,0.473,1
-Dark matter,3,0704.2444,Contraints on radiative dark-matter decay from the cosmic microwave background,astro-ph hep-ph hep-th,0.4326,1
-Dark matter,4,0704.1638,Accelerated expansion of the Universe filled up with the scalar gravitons,gr-qc astro-ph hep-ph,0.4219,1
-Dark matter,5,0704.0944,GLAST and Dark Matter Substructure in the Milky Way,astro-ph,0.3848,1

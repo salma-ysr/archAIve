@@ -62,6 +62,7 @@ if __name__ == "__main__":
     vectorizer = joblib.load(ARTIFACTS / "tfidf_vectorizer.joblib")
     svd = joblib.load(ARTIFACTS / "svd_transformer.joblib")
     index = faiss.read_index(str(ARTIFACTS / "faiss_index_ivf.idx"))
+    index.nprobe = 10 # num. of clusters to search
     meta = pd.read_parquet(ARTIFACTS / "meta.parquet")
 
     # Transform query

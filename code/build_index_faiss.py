@@ -15,10 +15,10 @@ OUT_DIR = PROCESSED_DIR
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Parameters
-MAX_FEATURES = 5000
-SVD_DIM = 300
+MAX_FEATURES = 20000 
+SVD_DIM = 400 #trying to optimize relevance 
 N_LIST = 100
-SAMPLE_SIZE = 10000
+SAMPLE_SIZE = 500000  # number of samples to fit TF-IDF and SVD
 BATCH_SIZE = 50000  # number of rows to process at a time
 
 # Main
