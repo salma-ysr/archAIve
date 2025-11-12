@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+federated learning for healthcare data,1,2205.09681,Amalur: Data Integration Meets Machine Learning,cs.DB,0.9110000133514404
+federated learning for healthcare data,2,2306.14356,Smart Transformation of EFL Teaching and Learning Approaches,cs.AI,0.907800018787384
+federated learning for healthcare data,3,2107.13270,A Reflection on Learning from Data: Epistemology Issues and Limitations,cs.LG cs.AI,0.892799973487854
+federated learning for healthcare data,4,2405.02703,Machine Learning Data Practices through a Data Curation Lens: An Evaluation Framework,cs.CY,0.8880000114440918
+federated learning for healthcare data,5,1910.02109,Confederated Machine Learning on Horizontally and Vertically Separated Medical Data for Large-Scale Health System Intelligence,cs.LG cs.AI cs.CY,0.8873000144958496

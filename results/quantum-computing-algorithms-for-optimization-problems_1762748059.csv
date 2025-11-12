@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+quantum computing algorithms for optimization problems,1,1708.05294,Combinatorial Optimization on Gate Model Quantum Computers: A Survey,quant-ph cs.DM,0.8611000180244446
+quantum computing algorithms for optimization problems,2,1805.03265,Quantum Algorithms for Scientific Computing and Approximate Optimization,quant-ph,0.821399986743927
+quantum computing algorithms for optimization problems,3,0804.4457,Image recognition with an adiabatic quantum computer I. Mapping to quadratic unconstrained binary optimization,quant-ph,0.8166000247001648
+quantum computing algorithms for optimization problems,4,2301.06978,Solving various NP-Hard problems using exponentially fewer qubits on a Quantum Computer,quant-ph,0.8141999840736389
+quantum computing algorithms for optimization problems,5,2407.06421,Variational Quantum Algorithms for Combinatorial Optimization,quant-ph cs.ET,0.8137999773025513

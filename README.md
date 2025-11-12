@@ -47,27 +47,29 @@ ArchAIve
 |
 |-- Project Proposal.pdf
 |-- Preliminary Results.pdf
-|-- README.md -> here!
+|-- Final Results.pdf
+|-- README.md
 ```
 
-## Setup & How to run recommend.py
+## Setup & How to run the recommender
 
 ### 1. Activate your venv
 ```
 python3 -m venv .venv
 source .venv/bin/activate
 pip3 install -U pandas numpy scikit-learn joblib pyarrow nltk matplotlib flask
+pip install faiss-cpu==1.7.4 (if you're on a MacOS M1/M2/M3 chip)
 ```
 ### 2. Download ArxIV dataset and unzip it in ./data/
 
 ### 3. Preprocess
     run:
-    i) python3 code/preprocess.py -> this loads small subset of data and cleans the text
-    ii) python3 code/build_index.py
+    i) python3 code/preprocess_faiss.py -> this loads a subset of data and cleans the text
+    ii) python3 code/build_index_faiss.py
 
 ### 4. Test the recommender
     run:
-    python3 code/recommend.py "some query"
+    python3 code/recommend_faiss.py "some query"
 
 ## Cosine Similarity
 The Cosine Similarity column is the cosine between TF-IDF vectors (range 0–1). The top 5 articles with highest cosine similarity will be shown.

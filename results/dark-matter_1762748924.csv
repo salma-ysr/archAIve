@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+Dark matter,1,2203.07252,Snowmass2021: Vera C. Rubin Observatory as a Flagship Dark Matter Experiment,hep-ex astro-ph.CO,0.9671000242233276
+Dark matter,2,astro-ph/0405479,Dark Matter Detection in Space,astro-ph hep-ex hep-ph,0.96670001745224
+Dark matter,3,1103.2771,Asymmetric WIMP dark matter,hep-ph astro-ph.CO,0.9613000154495239
+Dark matter,4,astro-ph/0401341,Dark Matter: Early Considerations,astro-ph,0.9599999785423279
+Dark matter,5,astro-ph/0607131,"Hot-dark matter, cold dark matter and accelerating universe",astro-ph,0.958899974822998

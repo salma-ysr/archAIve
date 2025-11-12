@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+transformer architectures for natural language processing,1,2004.13203,A Summary of the First Workshop on Language Technology for Language Documentation and Revitalization,cs.CL,0.8751000165939331
+transformer architectures for natural language processing,2,1506.03363,Super-Languages: Developing Languages and Applications with XMF (Second Edition),cs.SE cs.PL,0.8694000244140625
+transformer architectures for natural language processing,3,1312.3251,Towards The Development of a Bishnupriya Manipuri Corpus,cs.CL,0.8684999942779541
+transformer architectures for natural language processing,4,2101.11436,Challenges Encountered in Turkish Natural Language Processing Studies,cs.CL cs.AI,0.8628000020980835
+transformer architectures for natural language processing,5,2502.19249,Between Circuits and Chomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases,cs.CL cs.AI cs.LG,0.8615000247955322

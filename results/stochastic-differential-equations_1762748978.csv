@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+stochastic differential equations,1,1407.7147,Understanding stochastic differential equations,math.PR,0.9381999969482422
+stochastic differential equations,2,1408.0569,Wong-Zakai Approximations of Backward Doubly Stochastic Doubly Backward Differential Equations,math.PR,0.9258000254631042
+stochastic differential equations,3,1107.1651,A regression Monte-Carlo method for Backward Doubly Stochastic Differential Equations,math.PR,0.9240000247955322
+stochastic differential equations,4,1504.05309,Introduction to Stochastic Differential Equations (SDEs) for Finance,q-fin.MF math.PR,0.920799970626831
+stochastic differential equations,5,2007.14652,TCI for SDEs with irregular drifts,math.PR,0.9180999994277954

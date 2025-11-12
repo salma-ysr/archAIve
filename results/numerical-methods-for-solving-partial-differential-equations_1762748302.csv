@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+numerical methods for solving partial differential equations,1,2109.01432,Wavelet methods in partial differential equations on spheres,math-ph math.MP,0.8600000143051147
+numerical methods for solving partial differential equations,2,1709.08618,Introduction to Finite Element Methods,math.NA cs.NA,0.8305000066757202
+numerical methods for solving partial differential equations,3,0909.0910,Chaos in Partial Differential Equations,nlin.CD math.AP math.DS nlin.PS nlin.SI physics.flu-dyn,0.795799970626831
+numerical methods for solving partial differential equations,4,1104.4025,Methods in Mathematica for Solving Ordinary Differential Equations,cs.SC math.CA math.DS,0.7890999913215637
+numerical methods for solving partial differential equations,5,2509.14847,A class of flexible and efficient partitioned Runge-Kutta-Chebyshev methods for some time-dependent partial differential equations,math.NA cs.NA,0.7871999740600586

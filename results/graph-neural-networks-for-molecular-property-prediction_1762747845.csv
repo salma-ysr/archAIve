@@ -1,0 +1,6 @@
+query,rank,doc_id,title,categories,similarity
+graph neural networks for molecular property prediction,1,1909.00259,Gated Graph Recursive Neural Networks for Molecular Property Prediction,cs.LG q-bio.BM stat.ML,0.8374999761581421
+graph neural networks for molecular property prediction,2,2012.04444,Comparison of Atom Representations in Graph Neural Networks for Molecular Property Prediction,physics.chem-ph cs.LG stat.ML,0.8197000026702881
+graph neural networks for molecular property prediction,3,2208.04852,Graph neural networks for the prediction of molecular structure-property relationships,q-bio.BM cs.LG math.OC,0.8090999722480774
+graph neural networks for molecular property prediction,4,2012.08752,"Graph Neural Networks: Taxonomy, Advances and Trends",cs.LG,0.8004999756813049
+graph neural networks for molecular property prediction,5,2311.01205,Attacking Graph Neural Networks with Bit Flips: Weisfeiler and Lehman Go Indifferent,cs.LG cs.AI cs.CR cs.NE,0.7890999913215637
