@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
+from scipy import sparse
 import joblib
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,6 +22,7 @@ if __name__ == "__main__":
 
     joblib.dump(vectorizer, OUT / "tfidf_vectorizer.joblib") #weighted importance of words (common vs rare)
     joblib.dump(knn, OUT / "knn_index.joblib")
+    sparse.save_npz(OUT / "tfidf_matrix.npz", X)
     df[["id", "title", "categories", "authors", "abstract", "clean_abstract"]].to_parquet(
     OUT / "meta.parquet", index=False
     )

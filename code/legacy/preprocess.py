@@ -36,7 +36,14 @@ def load_subset(max_rows: int = 5000) -> pd.DataFrame: #only using 5000 rows for
             rows.append(json.loads(line))
     df = pd.DataFrame(rows)
     useful_cols = ["id", "title", "abstract", "categories", "authors"]
+    if "doi" in df.columns:
+        useful_cols.append("doi")
     df = df[useful_cols]
+
+    df["arxiv_link"] = "https://arxiv.org/abs/" + df["id"].astype(str)
+    if "doi" in df.columns:
+        df["doi_link"] = df["doi"].apply(lambda d: f"https://doi.org/{d}" if pd.notna(d) else "")
+
     return df
 
 def clean_text(text: str) -> str:

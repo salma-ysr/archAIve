@@ -16,6 +16,7 @@ def load_papers(chunk_size=50000):
             if (i + 1) % chunk_size == 0:
                 df = pd.DataFrame(rows)
                 df = df[["id", "title", "abstract", "categories", "authors"]]
+                df["arxiv_link"] = "https://arxiv.org/abs/" + df['id'].astype(str)
                 yield df
                 rows = []
         # yield any remaining rows

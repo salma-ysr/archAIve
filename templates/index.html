@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ArXiv Recommender</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #2c3e50; }
+    form { margin-bottom: 20px; }
+    input[type="text"] { width: 400px; padding: 8px; font-size: 16px; }
+    button { padding: 8px 16px; font-size: 16px; cursor: pointer; }
+    .recommendations { max-height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; }
+    .rec-item { padding: 10px; border-bottom: 1px solid #eee; }
+    .rec-item:last-child { border-bottom: none; }
+    .title { font-weight: bold; font-size: 16px; color: #2980b9; }
+    .authors, .categories, .similarity { font-size: 14px; color: #555; }
+    a { text-decoration: none; color: #2980b9; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>ArXiv Article Recommender</h1>
+  <form method="POST">
+    <input type="text" name="query" placeholder="Enter your query" required value="{{ query }}">
+    <button type="submit">Search</button>
+  </form>
+
+  {% if recommendations %}
+    <h2>Top {{ recommendations|length }} recommendations for "{{ query }}":</h2>
+    <div class="recommendations">
+      {% for rec in recommendations %}
+        <div class="rec-item">
+          <div class="title">
+            <a href="{{ rec.arxiv_link }}" target="_blank">{{ rec.title }}</a>
+            {% if rec.get('doi') %}
+              (<a href="{{ rec.doi_link }}" target="_blank">DOI</a>)
+            {% endif %}
+          </div>
+          <div class="authors">Authors: {{ rec.authors }}</div>
+          <div class="categories">Categories: {{ rec.categories }}</div>
+          <div class="similarity">Similarity: {{ rec.similarity }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</body>
+</html>

@@ -1,11 +1,14 @@
 from pathlib import Path
 import sys, re, joblib, pandas as pd
 import numpy as np
+from scipy import sparse
 
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "data" / "processed" # joblibs + meta
 RESULTS_DIR = ROOT / "results" # saved per-query CSVs
 TOPK = 5
+
+X = sparse.load_npz(ARTIFACTS / "tfidf_matrix.npz")
 
 def clean_query(q: str) -> str:
     q = q.lower()
@@ -74,6 +77,10 @@ if __name__ == "__main__":
     recs["categories"] = recs.get("categories", "").map(squash_ws)
     recs["authors"] = recs.get("authors", "").map(authors_to_str)
 
+    # Include links
+    recs["arxiv_link"] = recs.get("arxiv_link", "")
+    recs["doi_link"] = recs.get("doi_link", "")
+
     # pretty print
     print(f'\nQuery: "{query}"\n')
     print("Top-5 Recommended Papers:\n")
@@ -99,6 +106,8 @@ if __name__ == "__main__":
         "title": recs["title"].values,
         "categories": recs["categories"].values,
         "cosine": recs["similarity"].astype(float).values,
+        "arxiv_link": recs["arxiv_link"].values,
+        "doi_link": recs["doi_link"].values,
     })
 
     out_path = RESULTS_DIR / f"{slug(query)}.csv"
