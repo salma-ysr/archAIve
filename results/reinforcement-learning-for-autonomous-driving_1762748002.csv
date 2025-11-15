@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-reinforcement learning for autonomous driving,1,1405.3072,Haskell for OCaml programmers,cs.PL,0.9435999989509583
-reinforcement learning for autonomous driving,2,2004.00993,Augmented Q Imitation Learning (AQIL),cs.LG cs.AI,0.929099977016449
-reinforcement learning for autonomous driving,3,1903.07854,Hindsight Generative Adversarial Imitation Learning,cs.LG stat.ML,0.9276999831199646
-reinforcement learning for autonomous driving,4,2505.06314,A4L: An Architecture for AI-Augmented Learning,cs.CY cs.AI,0.92330002784729
-reinforcement learning for autonomous driving,5,1407.2437,Review of monitoring tools for e-learning platforms,cs.CY,0.9217000007629395
+query,rank,doc_id,title,categories,similarity,relevant
+reinforcement learning for autonomous driving,1,1405.3072,Haskell for OCaml programmers,cs.PL,0.9435999989509583,0
+reinforcement learning for autonomous driving,2,2004.00993,Augmented Q Imitation Learning (AQIL),cs.LG cs.AI,0.929099977016449,0
+reinforcement learning for autonomous driving,3,1903.07854,Hindsight Generative Adversarial Imitation Learning,cs.LG stat.ML,0.9276999831199646,0
+reinforcement learning for autonomous driving,4,2505.06314,A4L: An Architecture for AI-Augmented Learning,cs.CY cs.AI,0.92330002784729,0
+reinforcement learning for autonomous driving,5,1407.2437,Review of monitoring tools for e-learning platforms,cs.CY,0.9217000007629395,0

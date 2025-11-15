@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-image classification using convolutional neural networks,1,1804.00968,In-depth Question classification using Convolutional Neural Networks,cs.CL,0.8633000254631042
-image classification using convolutional neural networks,2,2205.09250,Bayesian Convolutional Neural Networks for Limited Data Hyperspectral Remote Sensing Image Classification,cs.CV,0.8490999937057495
-image classification using convolutional neural networks,3,1802.00947,Ensembling Neural Networks for Digital Pathology Images Classification and Segmentation,cs.CV,0.8396999835968018
-image classification using convolutional neural networks,4,1504.05133,Exploiting Local Features from Deep Networks for Image Retrieval,cs.CV,0.8384000062942505
-image classification using convolutional neural networks,5,2304.10714,Picking Up Quantization Steps for Compressed Image Classification,cs.CV eess.IV,0.8363000154495239
+query,rank,doc_id,title,categories,similarity,relevant
+image classification using convolutional neural networks,1,1804.00968,In-depth Question classification using Convolutional Neural Networks,cs.CL,0.8633000254631042,0
+image classification using convolutional neural networks,2,2205.09250,Bayesian Convolutional Neural Networks for Limited Data Hyperspectral Remote Sensing Image Classification,cs.CV,0.8490999937057495,1
+image classification using convolutional neural networks,3,1802.00947,Ensembling Neural Networks for Digital Pathology Images Classification and Segmentation,cs.CV,0.8396999835968018,1
+image classification using convolutional neural networks,4,1504.05133,Exploiting Local Features from Deep Networks for Image Retrieval,cs.CV,0.8384000062942505,0
+image classification using convolutional neural networks,5,2304.10714,Picking Up Quantization Steps for Compressed Image Classification,cs.CV eess.IV,0.8363000154495239,1

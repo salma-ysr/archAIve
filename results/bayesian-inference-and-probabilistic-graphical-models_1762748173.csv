@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-bayesian inference and probabilistic graphical models,1,1010.0814,Rejoinder: Likelihood Inference for Models with Unobservables Another View,stat.ME,0.8702999949455261
-bayesian inference and probabilistic graphical models,2,1010.0804,Discussion of Likelihood Inference for Models with Unobservables: Another View,stat.ME,0.8657000064849854
-bayesian inference and probabilistic graphical models,3,1807.09356,Iterative Amortized Inference,cs.LG stat.ML,0.861299991607666
-bayesian inference and probabilistic graphical models,4,2309.17005,Bayesian Methodologies with pyhf,stat.CO hep-ex,0.8352000117301941
-bayesian inference and probabilistic graphical models,5,2310.03435,Variational Inference for GARCH-family Models,stat.ML cs.LG econ.EM,0.8217999935150146
+query,rank,doc_id,title,categories,similarity,relevant
+bayesian inference and probabilistic graphical models,1,1010.0814,Rejoinder: Likelihood Inference for Models with Unobservables Another View,stat.ME,0.8702999949455261,0
+bayesian inference and probabilistic graphical models,2,1010.0804,Discussion of Likelihood Inference for Models with Unobservables: Another View,stat.ME,0.8657000064849854,0
+bayesian inference and probabilistic graphical models,3,1807.09356,Iterative Amortized Inference,cs.LG stat.ML,0.861299991607666,1
+bayesian inference and probabilistic graphical models,4,2309.17005,Bayesian Methodologies with pyhf,stat.CO hep-ex,0.8352000117301941,1
+bayesian inference and probabilistic graphical models,5,2310.03435,Variational Inference for GARCH-family Models,stat.ML cs.LG econ.EM,0.8217999935150146,0

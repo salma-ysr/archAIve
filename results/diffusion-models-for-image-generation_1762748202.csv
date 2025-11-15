@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-diffusion models for image generation,1,2409.10353,Taming Diffusion Models for Image Restoration: A Review,cs.CV,0.916700005531311
-diffusion models for image generation,2,2311.12066,EditShield: Protecting Unauthorized Image Editing by Instruction-guided Diffusion Models,cs.CR cs.CV,0.9151999950408936
-diffusion models for image generation,3,2403.19645,GANTASTIC: GAN-based Transfer of Interpretable Directions for Disentangled Image Editing in Text-to-Image Diffusion Models,cs.CV,0.906499981880188
-diffusion models for image generation,4,2212.03221,ADIR: Adaptive Diffusion for Image Reconstruction,cs.CV eess.IV,0.900600016117096
-diffusion models for image generation,5,2506.05466,Towards Reliable Identification of Diffusion-based Image Manipulations,cs.CV,0.8978000283241272
+query,rank,doc_id,title,categories,similarity,relevant
+diffusion models for image generation,1,2409.10353,Taming Diffusion Models for Image Restoration: A Review,cs.CV,0.916700005531311,1
+diffusion models for image generation,2,2311.12066,EditShield: Protecting Unauthorized Image Editing by Instruction-guided Diffusion Models,cs.CR cs.CV,0.9151999950408936,1
+diffusion models for image generation,3,2403.19645,GANTASTIC: GAN-based Transfer of Interpretable Directions for Disentangled Image Editing in Text-to-Image Diffusion Models,cs.CV,0.906499981880188,1
+diffusion models for image generation,4,2212.03221,ADIR: Adaptive Diffusion for Image Reconstruction,cs.CV eess.IV,0.900600016117096,1
+diffusion models for image generation,5,2506.05466,Towards Reliable Identification of Diffusion-based Image Manipulations,cs.CV,0.8978000283241272,1

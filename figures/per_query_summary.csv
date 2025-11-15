@@ -1,13 +1,14 @@
 query,avg_cosine,max_cosine,precision_at_k
-Superconductivity,0.31555999999999995,0.363,1.0
-Graph neural networks,0.31384,0.3584,0.6
-free radicals cancer,0.3339,0.7088,0.6
-Symmetry and Numerical Solutions for Systems of Non-linear Reaction,0.24392,0.3122,0.4
-Dark matter,0.44382,0.5068,1.0
-Large language models,0.31674,0.4229,0.6
-cancer and protein misfolding,0.38302,0.629,0.8
-Image segmentation,0.34694,0.4433,0.6
-Transformer models,0.33926,0.3823,0.0
-quantum computing,0.30019999999999997,0.415,0.6
-Stochastic differential equations,0.38516,0.4128,0.8
-Machine learning,0.39626,0.6653,0.8
+federated learning for healthcare data,0.8973800063133239,0.9110000133514404,0.2
+quantum computing algorithms for optimization problems,0.8254199981689453,0.8611000180244446,1.0
+large language models and prompt engineering,0.9117599964141846,0.9235000014305116,0.0
+Transformer models,0.9140599966049194,0.9325000047683716,0.2
+image classification using convolutional neural networks,0.845360004901886,0.8633000254631042,0.6
+graph neural networks for molecular property prediction,0.8111799836158753,0.8374999761581421,0.8
+bayesian inference and probabilistic graphical models,0.8508599996566772,0.8702999949455261,0.4
+numerical methods for solving partial differential equations,0.8125199913978577,0.8600000143051147,0.6
+transformer architectures for natural language processing,0.8674600124359131,0.8751000165939331,0.0
+stochastic differential equations,0.925380003452301,0.9381999969482422,1.0
+reinforcement learning for autonomous driving,0.9290799975395203,0.9435999989509584,0.0
+Dark matter,0.9628000020980835,0.9671000242233276,1.0
+diffusion models for image generation,0.9073600053787232,0.916700005531311,1.0

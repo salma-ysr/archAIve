@@ -21,15 +21,15 @@ def load_results(results_dir: Path) -> pd.DataFrame:
             df["query"] = p.stem
 
         # required columns present check
-        required = {"query", "rank", "cosine"}
+        required = {"query", "rank", "similarity"}
         missing = required - set(df.columns)
         if missing:
             raise ValueError(f"{p.name} missing required columns: {sorted(missing)}")
 
         # remove nums, strip whitespace in case
         df["rank"]   = pd.to_numeric(df["rank"], errors="coerce")
-        df["cosine"] = pd.to_numeric(
-            df["cosine"]
+        df["similarity"] = pd.to_numeric(
+            df["similarity"]
                 .astype(str)
                 .str.replace("%","", regex=False)   # in case someone pasted percents
                 .str.replace(",",".", regex=False)  # stray commas to dots
@@ -51,7 +51,7 @@ def load_results(results_dir: Path) -> pd.DataFrame:
             ).fillna(0).astype(int)
 
         # drop junk rows
-        df = df.dropna(subset=["rank","cosine","query"])
+        df = df.dropna(subset=["rank","similarity","query"])
 
         # drop num or null entries
         df = df[df["query"].apply(lambda q: isinstance(q, str) and q.strip() != "" and not q.strip().isdigit())]
@@ -92,8 +92,8 @@ def main():
     # per-query cosine stats
     cos_stats = (
     df.groupby("query", dropna=True, sort=False)
-      .agg(avg_cosine=("cosine", "mean"),
-           max_cosine=("cosine", "max"))
+      .agg(avg_cosine=("similarity", "mean"),
+           max_cosine=("similarity", "max"))
       .reset_index()
     )
 
@@ -112,7 +112,7 @@ def main():
     plt.close()
     
     # graph 2: distribution of cosine similarities (all top-k across queries)
-    all_cos = df["cosine"].values
+    all_cos = df["similarity"].values
 
     plt.figure()
     plt.boxplot(all_cos, vert=True)

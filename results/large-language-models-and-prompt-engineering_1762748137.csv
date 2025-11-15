@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-large language models and prompt engineering,1,2303.00077,Beyond the limitations of any imaginable mechanism: large language models and psycholinguistics,cs.CL cs.AI,0.9235000014305115
-large language models and prompt engineering,2,2310.14542,Evaluating Large Language Models on Controlled Generation Tasks,cs.CL,0.9160000085830688
-large language models and prompt engineering,3,2504.18572,BELL: Benchmarking the Explainability of Large Language Models,cs.AI cs.CL,0.911899983882904
-large language models and prompt engineering,4,2412.10291,"Still ""Talking About Large Language Models"": Some Clarifications",cs.CL cs.AI cs.LG,0.9041000008583069
-large language models and prompt engineering,5,2501.09223,Foundations of Large Language Models,cs.CL cs.AI cs.LG,0.9032999873161316
+query,rank,doc_id,title,categories,similarity,relevant
+large language models and prompt engineering,1,2303.00077,Beyond the limitations of any imaginable mechanism: large language models and psycholinguistics,cs.CL cs.AI,0.9235000014305115,0
+large language models and prompt engineering,2,2310.14542,Evaluating Large Language Models on Controlled Generation Tasks,cs.CL,0.9160000085830688,0
+large language models and prompt engineering,3,2504.18572,BELL: Benchmarking the Explainability of Large Language Models,cs.AI cs.CL,0.911899983882904,0
+large language models and prompt engineering,4,2412.10291,"Still ""Talking About Large Language Models"": Some Clarifications",cs.CL cs.AI cs.LG,0.9041000008583069,0
+large language models and prompt engineering,5,2501.09223,Foundations of Large Language Models,cs.CL cs.AI cs.LG,0.9032999873161316,0

@@ -1,6 +1,6 @@
-query,rank,doc_id,title,categories,similarity
-Transformer models,1,hep-th/9702182,The Ruijsenaars-Schneider Model,hep-th nlin.SI solv-int,0.9325000047683716
-Transformer models,2,2010.01382,A Taxonomy of Polytomous Item Response Models,stat.ME,0.9280999898910522
-Transformer models,3,0707.1817,HEIDI and the unparticle,hep-ph,0.9078999757766724
-Transformer models,4,2509.02464,SpecEval: Evaluating Model Adherence to Behavior Specifications,cs.CL,0.901199996471405
-Transformer models,5,1510.07748,Computational models: Bottom-up and top-down aspects,cs.CV,0.900600016117096
+query,rank,doc_id,title,categories,similarity,relevant
+Transformer models,1,hep-th/9702182,The Ruijsenaars-Schneider Model,hep-th nlin.SI solv-int,0.9325000047683716,0
+Transformer models,2,2010.01382,A Taxonomy of Polytomous Item Response Models,stat.ME,0.9280999898910522,0
+Transformer models,3,0707.1817,HEIDI and the unparticle,hep-ph,0.9078999757766724,0
+Transformer models,4,2509.02464,SpecEval: Evaluating Model Adherence to Behavior Specifications,cs.CL,0.901199996471405,1
+Transformer models,5,1510.07748,Computational models: Bottom-up and top-down aspects,cs.CV,0.900600016117096,0
