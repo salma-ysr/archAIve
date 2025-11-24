@@ -69,7 +69,8 @@ def index():
         # cosine = (1.0 - distances[0]).astype(float)
         
         recs = meta.iloc[indices[0]].copy().reset_index(drop=True)
-        recs["similarity"] = np.round(sims, 4)
+        # convert to percentage
+        recs["similarity"] = [f"{val*100:.1f}%" for val in sims]
         recs["authors"] = recs["authors"].apply(authors_to_str)
 
         recs["arxiv_link"] = recs.get("arxiv_link", "")

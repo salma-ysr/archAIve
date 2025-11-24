@@ -5,7 +5,8 @@
   <title>ArXiv Recommender</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #f3f4f6;
@@ -152,8 +153,8 @@
     }
 
     .recommendations {
-      max-height: 420px;
-      overflow-y: auto;
+      max-height: none;
+      overflow-y: visible;
       padding-right: 4px;
     }
 
@@ -180,6 +181,17 @@
       gap: 10px;
       margin-bottom: 4px;
     }
+
+    .project-name {
+      font-family: "Merriweather", serif;
+      font-size: 15px;
+      letter-spacing: 0.16em;
+      text-transform: none;
+      color: var(--accent-dark);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
 
     .title {
       font-weight: 600;
@@ -274,6 +286,7 @@
           <img src="{{url_for('static', filename='arxiv-logomark.svg')}}" alt="arXiv logo">
         </div>
         <div class="title-block">
+          <div class="project-name">archAIve</div>
           <h1>ArXiv Article Recommender</h1>
           <div class="subtitle">
             Find relevant research papers based on your query.
@@ -324,9 +337,7 @@
                       <span class="category-tag">{{ cat.strip() }}</span>
                     {% endfor %}
                   </div>
-                  <div class="similarity">
-                    similarity: {{ rec.similarity }}
-                  </div>
+                  <div class="similarity">similarity: {{ rec.similarity }}</div>
                 </div>
               </div>
             {% endfor %}

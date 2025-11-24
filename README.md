@@ -75,7 +75,11 @@ ArchAIve
 |
 |-- results/
 |   |-- per-query CSV outputs produced by recommend_faiss.py
-
+|
+|-- templates/
+|   |-- index.html
+|
+|-- app.py
 |-- Project Proposal.pdf
 |-- Preliminary Results.pdf
 |-- Final Results.pdf
@@ -134,7 +138,7 @@ SVD compresses these huge vectors into something smaller while keeping the impor
 Measures how close two vectors point in the same direction
 1.0 = very similar
 0 = no similarity
-Used to check how relevant the recommended papers actually were.
+Used to check how relevant the recommended papers actually were. We converted these values to rounded percentages for readability.
 
 ### FAISS 
 Library built for fast nearest-neighbor search on large datasets.
